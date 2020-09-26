@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music by Genre</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+    $("#flippop").click(function(){
+        $("#panelpop").slideToggle("slow");
+    });
+    });
+    </script>
+
+    <script> 
+    $(document).ready(function(){
+    $("#fliprock").click(function(){
+        $("#panelrock").slideToggle("slow");
+    });
+    });
+    </script>
+
+    <script> 
+    $(document).ready(function(){
+    $("#flipjazz").click(function(){
+        $("#paneljazz").slideToggle("slow");
+    });
+    });
+    </script>
+
+    <script> 
+    $(document).ready(function(){
+    $("#flipkpop").click(function(){
+        $("#panelkpop").slideToggle("slow");
+    });
+    });
+    </script>
+
+
+
+
+</head>
+
+
+<body>
+    <div id = "header">
+        <div id = "left">
+            <img class="pic" src = "./assets/logo.png" alt="RX Player" >  
+            <a>RX Player</a> 
+        </div>
+
+        <div id = "menubar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" font-family: 'Advent Pro';font-size: 22px;>menu &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="regist.html">register</a></li>
+                            <li><a href="prem.html">premium</a></li>
+                            <li><a href="top10.html">top 10</a></li>
+                            <li><a href="genre.html">music by genre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div id= "genrehead">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters">Music by Genre</span>
+                </span>
+              </h1>
+              
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+              <script>
+
+                  // Wrap every letter in a span
+                    var textWrapper = document.querySelector('.ml11 .letters');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+                            anime.timeline({loop: true})
+                            .add({
+                            targets: '.ml11 .line',
+                            scaleY: [0,1],
+                            opacity: [0.5,1],
+                            easing: "easeOutExpo",
+                            duration: 700
+                            })
+                            .add({
+                            targets: '.ml11 .line',
+                            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                            easing: "easeOutExpo",
+                            duration: 700,
+                            delay: 100
+                            }).add({
+                            targets: '.ml11 .letter',
+                            opacity: [0,1],
+                            easing: "easeOutExpo",
+                            duration: 600,
+                            offset: '-=775',
+                            delay: (el, i) => 34 * (i+1)
+                        }).add({
+                            targets: '.ml11',
+                            opacity: 0,
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                        });
+              </script>
+        </div>
+
+
+        <div>
+            <div id="flippop">Pop</div>
+            <div id="panelpop">
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>Lauv</h2>
+                      <p><img class = lagupop src="./assets/lauv.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Troye Sivan</h2>
+                      <p><img class = lagupop src="./assets/troye.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Ruel</h2>
+                      <p><img class = lagupop src="./assets/ruel.jpg" ></p>
+                    </div>
+                </div>
+
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>LANY</h2>
+                      <p><img class = lagupop src="./assets/lany.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Maroon 5</h2>
+                      <p><img class = lagupop src="./assets/maroon5.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Ariana Grande</h2>
+                      <p><img class = lagupop src="./assets/ariana.jpg" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div id="fliprock">Rock</div>
+            <div id="panelrock">
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>The 1975</h2>
+                      <p><img class = lagupop src="./assets/1975.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Avril Lavigne</h2>
+                      <p><img class = lagupop src="./assets/avril.png" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>ONE OK ROCK</h2>
+                      <p><img class = lagupop src="./assets/oneok.jpg" ></p>
+                    </div>
+                </div>
+
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>Coldplay</h2>
+                      <p><img class = lagupop src="./assets/coldplay.png" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Imagine Dragons</h2>
+                      <p><img class = lagupop src="./assets/imagine.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Twenty One Pilots</h2>
+                      <p><img class = lagupop src="./assets/twenty.png" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="flipjazz">Jazz</div>
+            <div id="paneljazz">
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>Miles Davis</h2>
+                      <p><img class = lagupop src="./assets/jaz1.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Chick Corea</h2>
+                      <p><img class = lagupop src="./assets/jaz2.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Chet Baker</h2>
+                      <p><img class = lagupop src="./assets/jaz3.jpg" ></p>
+                    </div>
+                </div>
+
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>Eric Dolphy</h2>
+                      <p><img class = lagupop src="./assets/jaz4.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Bill Evans</h2>
+                      <p><img class = lagupop src="./assets/jaz5.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Ornette Coleman</h2>
+                      <p><img class = lagupop src="./assets/jaz6.jpg" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div id="flipkpop">K-Pop</div>
+            <div id="panelkpop">
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>Stray Kids</h2>
+                      <p><img class = lagupop src="./assets/mrh.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Day6</h2>
+                      <p><img class = lagupop src="./assets/day6.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>NCT Dream</h2>
+                      <p><img class = lagupop src="./assets/dream.jpg" ></p>
+                    </div>
+                </div>
+
+                <div class="rowpop">
+                    <div class="columnpop" >
+                      <h2>Twice</h2>
+                      <p><img class = lagupop src="./assets/twice.jpg" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>Red Velvet</h2>
+                      <p><img class = lagupop src="./assets/rv.png" ></p>
+                    </div>
+                    <div class="columnpop" >
+                      <h2>NCT 127</h2>
+                      <p><img class = lagupop src="./assets/127.jpg" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id = "footer">
+            <div id = "bawah">
+                <a>RX Player</a> 
+                <br>
+            </div>
+            <div id = "alt">
+                <img class="pivc" src = "./assets/logo.png" alt="RX Player" >  
+                <p>448-13 Seongnae 3(sam)-dong,</p>
+                <p>Gangdong-gu,</p>
+                <p>Seoul,</p>
+                <p>South Korea</p>
+            </div>
+            <div id = "altt">
+                <p>est. December 2019</p>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    
+</body>
+
+
+</html>

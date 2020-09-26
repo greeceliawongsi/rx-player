@@ -1,0 +1,1066 @@
+/*general style for body*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+/*header style*/
+#header{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    align-items: center;
+}
+
+/*logo style*/
+#left {
+    font-family: 'Advent Pro';
+    font-size: 100px;
+    color: whitesmoke;
+    flex-direction: row;
+    align-items: right;
+    padding: 10px;
+ 
+ 
+}
+
+/*style for menu bar*/
+#menubar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(197, 186, 82);
+}
+
+
+/*style for text in menu bar*/
+.navbartxt{
+    color: white;
+    font-family: 'Advent Pro';font-size: 25px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+/*css for dropdown on menu bar*/
+ul{
+    padding: 0;
+    list-style: none;
+    background-color: #333;
+    color: whitesmoke;
+    font-family: 'Advent Pro';font-size: 25px;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+    color:whitesmoke;
+    font-family: 'Advent Pro';font-size: 25px;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Advent Pro';font-size: 25px;
+}
+ul li a:hover{
+    color: #fff;
+    background: #939393;
+    color: whitesmoke;
+    font-family: 'Advent Pro';font-size: 25px;
+}
+ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background: #333;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    color: whitesmoke;
+    font-family: 'Advent Pro';font-size: 22px;
+}
+ul li:hover ul.dropdown{
+    display: block;	/* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;
+}
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 10px;
+}
+
+#ntf{
+    font-family: 'Advent Pro';
+    float: right;
+    padding-right: 20px;
+  
+}
+
+.gambar2{
+    width: 17px;
+    height: 14px;
+    align-items: flex-end;
+    margin-left: 5px;
+    margin-top: -px;
+}
+
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*style for the slider*/
+#slider{
+    margin-top: 20px;
+    align-content: center;
+    align-items: center;
+    font-family: 'Advent Pro';
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display :none;
+}
+
+/*animation for fading effect in text*/
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#mt{
+    text-align: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 25px;
+    font-family: 'Athiti';
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/*style for logo*/
+.logo{
+    width: 136px;
+    height: 123px;
+    align-items: flex-end;
+    margin-top: 50px;
+
+}
+
+/*style for pic*/
+.pic{
+
+  width: auto;
+  height:200px;
+
+}
+
+/*jquery animation on slide (on click the slider will show) */
+#panel, #flip {
+  cursor: pointer;
+  font-size: 50px;
+  color: goldenrod;
+  font-style: unset;
+  padding: 5px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*style for the div on hoempage column*/
+.row {
+  display: flex;
+  
+}
+
+.column {
+  flex: 50%;
+  align-content: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+/*style for music display*/
+.mus{
+  
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  position: relative;
+  display: inline-block;
+  font-family: 'ABeeZee';font-size: 25px;
+  
+}
+.picc{
+  margin: 0 auto;
+  position: relative;
+  flex: 50%;
+  display: inline-block;
+  float:left;
+  
+  
+}
+
+.ttl{
+  padding: 10px;
+  display: inline-block;
+  font-size: 20px;
+  font-variant: unset;
+  font-weight: bold;
+  float:left;
+  text-align: left;
+}
+
+.lagu{
+  height: 100px;
+  width: 100px;
+}
+
+.hedd{
+  font-family: 'Catamaran';font-size: 28px;
+  font-weight: bold;
+  color: gray;
+}
+
+.log{
+  height: 30px;
+  width: 30px;
+
+}
+
+.mrr{
+  flex: 50%;
+  align-content: center;
+  text-align: center;
+  font-weight: 400;
+  color: #333;
+  font-family: 'Advent Pro';font-size: 30px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+
+.cvrrr{
+  position: relative;
+  align-content: center;
+  width: 100%;
+  height: auto;
+ 
+}
+
+/*style for footer*/
+#footer{
+  flex-direction: column;
+  background-color: #333;
+  display:flex;
+
+}
+
+#bawah {
+  flex: 50%;
+  align-content: left;
+  text-align: left;
+  font-weight: 400;
+  font-family: 'Advent Pro';
+  font-size: 80px;
+  color: whitesmoke;
+  float:left;
+  padding: 30px;
+
+}
+
+#alt{
+  flex: 50%;
+  align-content: right;
+  text-align: right;
+  font-weight: 400;
+  font-family: 'Advent Pro';
+  font-size: 15px;
+  font-weight: lighter;
+  color: whitesmoke;
+  padding-right: 20px;
+
+}
+
+.pivc{
+  float: left;
+  height: 240px;
+  width: autopx;
+ 
+}
+
+#altt{
+  float:left;
+  padding: 20px;
+  font-family: 'Advent Pro';
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+#toppp{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: 'Athiti';
+    font-size: 65px;
+    color: peru;
+
+}
+
+
+.mus2{
+  
+  width: 50%;
+  height: 50%;
+  position: relative;
+  display: inline-block;
+  font-family: 'ABeeZee';
+  font-size: 40px;
+  color: #333;
+  
+}
+.picc2{
+  margin: 0 auto;
+  position: relative;
+  flex: 50%;
+  display: inline-block;
+  float:left;
+  
+}
+
+.ttl2{
+  padding: 10px;
+  display: inline-block;
+
+  font-variant: unset;
+  font-weight: bold;
+  float:left;
+  text-align: left;
+
+}
+
+.lagu2{
+  height: 200px;
+  width: 200px;
+}
+
+/*style for "more" on hoempage*/
+.mrr a:link { color:#333;}
+.mrr a:visited { color:#c0c0c0; background-color:#0000a0; }
+.mrr a:hover { color:grey; columns: grey; }
+.mrr a:active { color:#333;  }
+
+
+/*regist*/
+.app-title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.register-btn {
+	background-color: #26abe3;
+	color: white;
+	border-radius: 5px;
+	min-height: 20px;
+	min-width: 60px;
+}
+
+.register-btn:hover {
+  background-color: #00b3ff;
+  cursor: pointer;
+}
+
+.register-btn:disabled{
+	background-color: #96a2a7;
+}
+
+
+
+.text-warning {
+	color: rgb(255, 0, 0);
+}
+
+.text-success {
+	color: rgb(0, 255, 0);
+}
+
+/*FORM*/
+.form-control {
+	width: 100%;
+}
+
+.form-label {
+	display: block;
+}
+
+.form-group {
+	text-align: left;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.form-container {
+	align-items: center;
+	text-align: center;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*HEADING*/
+.h1 {
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h5 {
+  font-size: .83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h6 {
+  font-size: .67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+/*FONT WEIGHT*/
+.f-500 {
+	font-weight: 500;
+}
+
+.f-600 {
+	font-weight: 600;
+}
+
+.f-700 {
+	font-weight: 700;
+}
+
+.f-800 {
+	font-weight: 800;
+}
+
+.f-900 {
+	font-weight: 900;
+}
+
+.f-1000 {
+	font-weight: 1000;
+}
+
+/*MARGIN TOP*/
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-70 {
+	margin-top: 70px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+
+.mt-90 {
+	margin-top: 90px;
+}
+
+.mt-100 {
+	margin-top: 100px;
+}
+
+.content-body{
+  font-family: 'Catamaran';font-size: 25px;
+  padding: 20px;
+}
+
+/*premium*/
+
+/*animated text*/
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: goldenrod;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color:#333;
+  transform-origin: 0.5 0;
+  font-family: 'ABeeZee';
+}
+
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+  font-family: 'ABeeZee';
+}
+
+#premiumhead{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 220px; /* Should be removed. Only for demonstration */
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+
+}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*premium*/
+.premlogo{
+
+  max-width: 15%;
+  max-height: auto;
+}
+
+
+.columnnn {
+  font-family: 'Advent Pro';
+  color: khaki;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-style: solid ;
+  border-width: 20px;
+  background-color:gray;
+  border-color: whitesmoke;
+}
+
+.columnnn li{
+  font-size: 25px;
+}
+.rowww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.premlogo2{
+  max-width: 30%;
+  max-height: auto;
+}
+
+#goprem{
+  font-family: 'Advent Pro';
+  float: center;
+  position: relative;
+}
+
+#goprem2{
+  font-family: 'Advent Pro';
+  float: center;
+  position: relative;
+}
+
+/*pop up when click on premium*/
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 10px;
+  background-color: #333;
+}
+
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup2 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+.popup21 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 10px;
+  background-color: #333;
+}
+
+.popup21 .popuptext21 {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.popup21 .popuptext21 {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup21 .popuptext21::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup21 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/*genree*/
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+  color:#333;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #333;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#genrehead{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnpop {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.rowpop:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lagupop{
+  width: 160px;
+  max-width: 60%;
+  max-height: auto;
+}
+
+/*pop*/
+#panelpop, #flippop {
+  padding: 5px;
+  text-align: center;
+
+}
+
+#flippop{
+ background-color: #333;
+  color: whitesmoke;
+  font-family: 'Advent Pro';font-size: 60px;
+}
+#flippop:hover{
+  cursor: pointer;
+}
+#panelpop {
+  padding: 50px;
+  display: none;
+  background-color: #333;
+  color: whitesmoke;
+  font-family: 'Advent Pro';font-size: 25px;
+}
+
+
+/*rock*/
+#panelrock, #fliprock {
+  padding: 5px;
+  text-align: center;
+}
+
+#fliprock{
+ background-color: whitesmoke;
+  color: #333;
+  font-family: 'Advent Pro';font-size: 60px;
+}
+#fliprock:hover{
+  cursor: pointer;
+}
+#panelrock {
+  padding: 50px;
+  display: none;
+  background-color: whitesmoke;
+  color: #333;
+  font-family: 'Advent Pro';font-size: 25px;
+}
+
+/*jazz*/
+#paneljazz, #flipjazz {
+  padding: 5px;
+  text-align: center;
+
+}
+
+#flipjazz{
+ background-color: #333;
+  color: whitesmoke;
+  font-family: 'Advent Pro';font-size: 60px;
+}
+#flipjazz:hover{
+  cursor: pointer;
+}
+#paneljazz {
+  padding: 50px;
+  display: none;
+  background-color: #333;
+  color: whitesmoke;
+  font-family: 'Advent Pro';font-size: 25px;
+}
+
+
+/*kpop*/
+#panelkpop, #flipkpop {
+  padding: 5px;
+  text-align: center;
+}
+
+#flipkpop{
+ background-color: whitesmoke;
+  color: #333;
+  font-family: 'Advent Pro';font-size: 60px;
+}
+#flipkpop:hover{
+  cursor: pointer;
+}
+#panelkpop {
+  padding: 50px;
+  display: none;
+  background-color: whitesmoke;
+  color: #333;
+  font-family: 'Advent Pro';font-size: 25px;
+}

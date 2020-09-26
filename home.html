@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX Player</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        
+        $("#flip").click(function(){
+            $(".slideshow-container").slideToggle("slow");
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <div id = "header">
+        <div id = "left">
+            <img class="pic" src = "./assets/logo.png" alt="RX Player" >  
+            <a>RX Player</a> 
+        </div>
+
+        <div id = "menubar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" font-family: 'Advent Pro';font-size: 22px;>menu &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="regist.html">register</a></li>
+                            <li><a href="prem.html">premium</a></li>
+                            <li><a href="top10.html">top 10</a></li>
+                            <li><a href="genre.html">music by genre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id ="ntf">
+            <div class="popup" onclick="myFunction()">click to subscribe<img class="gambar2"src="./assets/ntf.png" alt=""> </a>
+                <span class="popuptext" id="myPopup">subscribed to us</span>
+            </div>
+          
+              <script>
+              // When the user clicks on div, open the popup
+              function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+              }
+              </script>
+    </div>
+    
+    <div id = "mt">
+        <br>
+        <h1 class="ml9">
+            <span class="text-wrapper">
+                <span class="letters">play it everywhere,<br>
+                    everytime</span>
+            </span>
+        </h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <script>
+            
+        var textWrapper = document.querySelector('.ml9 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+        targets: '.ml9 .letter',
+        scale: [0, 1],
+        duration: 1500,
+        elasticity: 600,
+        delay: (el, i) => 45 * (i+1)
+        }).add({
+        targets: '.ml9',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+        });
+        </script>
+        <div id ="logo">
+            <img class = logo src="./assets/vn.png" >
+        </div>
+        
+    </div>
+
+    <div id = "slider">
+        <div id="flip">
+            <h1>What's <img class = logo src="./assets/new.png" > on RX Player</h1>
+        </div>
+        
+        
+        <br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="./assets/1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./assets/2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./assets/3.png" style="width:100%">
+            </div>
+            
+            
+            
+        </div>
+            <br>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <div class= "hedd">
+                know the latest <img class = log src="./assets/top.png" > music here
+                <br><br>
+            </div>
+            <div class ="mus">
+                <div class= "picc">
+                1. <img class = lagu src="./assets/ontrck.jpg" >
+                </div>
+                    <div class = "ttl">
+                    <p>Mixtape : On Track</p>
+                    <p>Stray Kids</p>
+                    </div>
+                <div class= "picc">
+                2. <img class = lagu src="./assets/lvt.jpg" >
+                </div>
+                    <div class = "ttl">
+                    <p>Levanter</p>
+                    <p>Stray Kids</p>
+                    </div>
+                <div class= "picc">
+                3. <img class = lagu src="./assets/mrh.jpg" >
+                </div>
+                    <div class = "ttl">
+                    <p>Miroh</p>
+                    <p>Stray Kids</p>
+                    </div> 
+            </div>
+            <br><br>
+            <div class= "mrr"><br><br>
+                <a href="top10.html">more</a>
+            </div>
+        </div>
+
+
+
+        <div class="column">
+            <div class= "hedd">
+                we got every genre you like <img class = log src="./assets/mscc.png" > 
+                <br>
+            </div>
+            <div class ="mus">
+                <h6>POP, ROCK, JAZZ, K-POP ...</h6>
+                <img class = cvrrr src="./assets/cvrr.png" >
+                
+            </div>
+            <br>
+
+            <div class= "mrr"><br><br><br><br>
+                <a href="genre.html">more</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id = "footer">
+        <div id = "bawah">
+            <a>RX Player</a> 
+            <br>
+        </div>
+        <div id = "alt">
+            <img class="pivc" src = "./assets/logo.png" alt="RX Player" >  
+            <p>448-13 Seongnae 3(sam)-dong,</p>
+            <p>Gangdong-gu,</p>
+            <p>Seoul,</p>
+            <p>South Korea</p>
+        </div>
+        <div id = "altt">
+            <p>est. December 2019</p>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>

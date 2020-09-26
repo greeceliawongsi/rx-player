@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png" />
+</head>
+<body>
+	<div id = "header">
+        <div id = "left">
+            <img class="pic" src = "./assets/logo.png" alt="RX Player" >  
+            <a>RX Player</a> 
+        </div>
+
+        <div id = "menubar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" font-family: 'Advent Pro';font-size: 22px;>menu &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="regist.html">register</a></li>
+                            <li><a href="prem.html">premium</a></li>
+                            <li><a href="top10.html">top 10</a></li>
+                            <li><a href="genre.html">music by genre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+	<div class="content-body">
+		<div class="app-title mt-30">REGISTER</div>
+		<div class="text-success text-center mt-20" id="register_msg"></div>
+		<form class="form-container mt-40">
+			<div class="form-group">
+				<div class="form-label">Fullname</div>
+				<input class="form-control" type="text" name="fullname" id="fullname">
+
+				<label class="text-warning" id="fullname_msg"></label>
+			</div>
+			<div class="form-group">
+				<div class="form-label">Email</div>
+				<input class="form-control" type="email" name="email" id="email">
+
+				<div class="text-warning" id="email_msg"></div>
+			</div>
+			<div class="form-group">
+				<div class="form-label">Password</div>
+				<input class="form-control" type="password" name="password" id="password">
+
+				<div class="text-warning" id="password_msg"></div>
+			</div>
+			<div class="form-group">
+				<div class="form-label">Gender</div>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+			</div>
+			<div class="form-group">
+				<div class="form-label">Payment Method</div>
+				<select class="form-control" name="paymentmethod" id="paymentmethod" id="paymentmethod">
+					<option value="creditcard">Credit Card</option>
+					<option value="ovo">OVO</option>
+					<option value="gopay">GoPay</option>
+					<option value="dana">Dana</option>
+					<option value="paypal">PayPal</option>
+					<option value="bitcoin">Bitcoin</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" name="term" id="term">
+				<a href="#">Agree with Terms and Conditions</a>
+
+				<div class="text-warning" id="term_msg"></div>
+			</div>
+			<button id="register" class="register-btn">Register</button>
+		</form>
+    </div>
+    
+    <div id = "footer">
+        <div id = "bawah">
+            <a>RX Player</a> 
+            <br>
+        </div>
+        <div id = "alt">
+            <img class="pivc" src = "./assets/logo.png" alt="RX Player" >  
+            <p>448-13 Seongnae 3(sam)-dong,</p>
+            <p>Gangdong-gu,</p>
+            <p>Seoul,</p>
+            <p>South Korea</p>
+        </div>
+        <div id = "altt">
+            <p>est. December 2019</p>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</html>

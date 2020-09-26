@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png" />
+</head>
+
+
+
+<body>
+    <div id = "header">
+        <div id = "left">
+            <img class="pic" src = "./assets/logo.png" alt="RX Player" >  
+            <a>RX Player</a> 
+        </div>
+
+        <div id = "menubar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" font-family: 'Advent Pro';font-size: 22px;>menu &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="regist.html">register</a></li>
+                            <li><a href="prem.html">premium</a></li>
+                            <li><a href="top10.html">top 10</a></li>
+                            <li><a href="genre.html">music by genre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id = "bodypremium">
+
+        <div id = premiumhead>
+            <h1 class="ml5">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters letters-left">GO</span>
+                  
+                  <span class="letters letters-right">PREMIUM</span>
+                  <span class="line line2"></span>
+                </span>
+              </h1>
+              
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+              <script>
+                  anime.timeline({loop: true})
+                    .add({
+                    targets: '.ml5 .line',
+                    opacity: [0.5,1],
+                    scaleX: [0, 1],
+                    easing: "easeInOutExpo",
+                    duration: 700
+                }).add({
+                    targets: '.ml5 .line',
+                    duration: 600,
+                    easing: "easeOutExpo",
+                    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+                }).add({
+                    targets: '.ml5 .ampersand',
+                    opacity: [0,1],
+                    scaleY: [0.5, 1],
+                    easing: "easeOutExpo",
+                    duration: 600,
+                    offset: '-=600'
+                }).add({
+                    targets: '.ml5 .letters-left',
+                    opacity: [0,1],
+                    translateX: ["0.5em", 0],
+                    easing: "easeOutExpo",
+                    duration: 600,
+                    offset: '-=300'
+                }).add({
+                    targets: '.ml5 .letters-right',
+                    opacity: [0,1],
+                    translateX: ["-0.5em", 0],
+                    easing: "easeOutExpo",
+                    duration: 600,
+                    offset: '-=600'
+                }).add({
+                    targets: '.ml5',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+              </script>
+        </div>
+
+        <div class="roww">
+            <div class="columnn" >
+                <img class = premlogo src="./assets/prem1.png" ><br><br><br>
+              <h2>Enjoy music with lyrics</h2>
+            </div>
+            <div class="columnn" >
+                <img class = premlogo src="./assets/prem2.png" ><br><br><br>
+              <h2>Download and play it anywhere</h2>
+            </div>
+            <div class="columnn"><br>
+                <img class = premlogo src="./assets/prem3.png" >
+                <br><br>
+              <h2>Always get most updated musics</h2>
+            </div>
+        </div>
+
+        <div class="rowww">
+            <div class="columnnn" >
+                <img class = premlogo2 src="./assets/prem5.png" ><br>
+              <h1>Sun Package</h1>
+              <h2>IDR 20.000/ months</h2>
+              <li>Get 6 months free</li>
+              <li>Pay with Credit card / Debit online</li>
+              <li>TnC apply</li>
+              <br>
+              <br><br>
+              <div id ="goprem">
+                <div class="popup2" onclick="myFunction1()"><h3>PREMIUM</h3>
+                    <span class="popuptext2" id="myPopup1">Applied for premium</span>
+                </div>
+              
+                  <script>
+                  // When the user clicks on div, open the popup
+                  function myFunction1() {
+                    var popup2 = document.getElementById("myPopup1");
+                    popup2.classList.toggle("show");
+                  }
+                  </script>
+        </div>
+            </div>
+            <div class="columnnn">
+                <img class = premlogo2 src="./assets/prem4.png" ><br>
+              <h1>Star Package</h1><br>
+              <h2>IDR 180.000/ 6 months</h2>
+              <li>Pay with E-Wallet</li>
+              <li>Cancel anytime</li>
+              <br>
+              <br>
+              <div id ="goprem2">
+                <div class="popup21" onclick="myFunction2()"><h3>PREMIUM</h3>
+                    <span class="popuptext21" id="myPopup2">Applied for premium</span>
+                </div>
+              
+                  <script>
+                  // When the user clicks on div, open the popup
+                  function myFunction2() {
+                    var popup21 = document.getElementById("myPopup2");
+                    popup21.classList.toggle("show");
+                  }
+                  </script>
+            </div>
+        </div>
+        
+    </div>
+
+
+   
+    <div id = "footer">
+        <div id = "bawah">
+            <a>RX Player</a> 
+            <br>
+        </div>
+        <div id = "alt">
+            <img class="pivc" src = "./assets/logo.png" alt="RX Player" >  
+            <p>448-13 Seongnae 3(sam)-dong,</p>
+            <p>Gangdong-gu,</p>
+            <p>Seoul,</p>
+            <p>South Korea</p>
+        </div>
+        <div id = "altt">
+            <p>est. December 2019</p>
+        </div>
+    </div>
+   
+</body>
+
+</html>
